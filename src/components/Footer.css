@@ -1,7 +1,7 @@
 .footer {
-  background: #3a3230;
+  background: #2C3E3F;
   color: white;
-  padding: 3rem 0 1rem;
+  padding: 1rem 0 0.25rem;
   margin-top: auto;
   animation: fadeInUp 1s ease-out 1.5s both;
 }
@@ -22,9 +22,9 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem 1.2rem;
-  background: #f1c030;
-  color: #7e5745;
-  border: 2px solid #f1c030;
+  background: #B8956A;
+  color: white;
+  border: 2px solid #B8956A;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
@@ -51,10 +51,10 @@
 
 .footer-download-btn:hover {
   background: transparent;
-  color: #f1c030;
-  border-color: #f1c030;
+  color: #B8956A;
+  border-color: #B8956A;
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 5px 15px rgba(241, 192, 48, 0.3);
+  box-shadow: 0 5px 15px rgba(184, 149, 106, 0.3);
 }
 
 .container {
@@ -64,68 +64,96 @@
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.footer-section {
-  animation: fadeInUp 1s ease-out both;
-}
-
-.footer-section:nth-child(1) {
-  animation-delay: 1.6s;
-}
-
-.footer-section:nth-child(2) {
-  animation-delay: 1.7s;
-}
-
-.footer-section:nth-child(3) {
-  animation-delay: 1.8s;
-}
-
-.footer-section:nth-child(4) {
-  animation-delay: 1.9s;
-}
-
-.footer-section h3 {
-  color: #3498db;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.footer-section h4 {
-  color: #ecf0f1;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.footer-section p {
-  line-height: 1.6;
-  color: #bdc3c7;
-  margin-bottom: 1rem;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14rem;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
-.footer-section ul li a {
+.footer-section-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section-middle {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 1rem;
+}
+
+.footer-section-right {
+  flex: 2;
+  min-width: 300px;
+}
+
+.footer-brand {
+  max-width: 100%;
+}
+
+.footer-office {
+  max-width: 100%;
+}
+
+.footer-office h4 {
+  color: #ecf0f1;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.office-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.office-info p {
+  color: #bdc3c7;
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.footer-brand h3 {
+  color: #B8956A;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.link-group {
+  flex: 1;
+}
+
+.link-group h4 {
+  color: #ecf0f1;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.link-list a {
   color: #bdc3c7;
   text-decoration: none;
+  font-size: 0.8rem;
   transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-  color: #3498db;
+.link-list a:hover {
+  color: #B8956A;
 }
 
 .social-links {
@@ -166,59 +194,43 @@
 }
 
 .social-links a:hover {
-  background: #f1c030;
-  color: #7e5745;
+  background: #B8956A;
+  color: white;
   transform: translateY(-3px) rotate(360deg);
 }
 
 .download-buttons {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .download-btn {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  background: rgba(52, 152, 219, 0.1);
-  border: 1px solid rgba(52, 152, 219, 0.3);
-  border-radius: 8px;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  background: #34495e;
+  border: 1px solid #4a5f7a;
+  border-radius: 6px;
   text-decoration: none;
-  color: #ecf0f1;
+  color: white;
   transition: all 0.3s ease;
-  min-width: 140px;
+  font-size: 0.75rem;
 }
 
 .download-btn:hover {
-  background: rgba(52, 152, 219, 0.2);
-  border-color: #3498db;
-  transform: translateY(-2px);
-  color: #3498db;
+  background: #4a5f7a;
+  transform: translateY(-1px);
 }
 
 .store-icon {
-  font-size: 1.5rem;
-}
-
-.store-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.get-it {
-  font-size: 0.7rem;
-  color: #bdc3c7;
-  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .store-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #ecf0f1;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .download-btn:hover .store-name {
@@ -274,20 +286,52 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid #34495e;
-  padding-top: 1rem;
+  border-top: 1px solid #4a5f7a;
+  padding-top: 0.25rem;
   text-align: center;
-  color: #95a5a6;
+  animation: fadeInUp 1s ease-out 2s both;
 }
 
 .footer-bottom p {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
+  margin: 0.1rem 0;
+  color: #bdc3c7;
+  font-size: 0.8rem;
+}
+
+.footer-bottom p:last-child {
+  color: #B8956A;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
   .footer-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer-section-left,
+  .footer-section-middle,
+  .footer-section-right {
+    min-width: 100%;
+    padding: 0;
+  }
+  
+  .footer-brand {
+    max-width: 100%;
+  }
+  
+  .footer-office {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .link-group {
     text-align: center;
   }
   
@@ -302,6 +346,8 @@
   }
   
   .download-btn {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
     width: 100%;
     max-width: 200px;
   }
@@ -314,5 +360,9 @@
   .support-legal-container {
     flex-direction: column;
     gap: 1rem;
+  }
+  
+  .footer {
+    padding: 0.75rem 0 0.2rem;
   }
 }

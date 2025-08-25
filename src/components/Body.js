@@ -173,11 +173,19 @@ const Body = () => {
         <div className="container">
           
           
-          <div className="team-carousel">
-            <div className="our-team-header">
-            <h2 className="team-title">OUR TEACHER</h2>
+          <div className="teacher-panel-content">
+            
+            <div className="teacher-panel-left">
+              <h3 className="teacher-panel-heading">আমাদের অভিজ্ঞ টিচার প্যানেল – আপনার সাফল্যের সঙ্গী</h3>
+              <p className="teacher-panel-description">ভালো শিক্ষক মানে সঠিক দিকনির্দেশনা, শক্তিশালী প্রস্তুতি।</p>
+            </div>
           </div>
-            <div className="team-carousel-container">
+          
+          <div className="our-team-header ">
+            <h2 className="team-title">OUR TEACHER</h2>
+            
+            <div className="team-carousel">
+              <div className="team-carousel-container">
               <button className="team-nav-btn prev" onClick={prevTeacher}>
                 ❮
               </button>
@@ -228,6 +236,7 @@ const Body = () => {
             </div>
           </div>
         </div>
+      </div>
       </section>
 
 
