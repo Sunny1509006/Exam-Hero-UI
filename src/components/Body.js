@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Body.css';
 
 const Body = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = 4;
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  }, [totalSlides]);
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [nextSlide]);
+
   return (
     <main className="body">
       {/* Hero Section */}
@@ -25,7 +45,39 @@ const Body = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src="/images/exam-hero.png" style={{height: '400px', width: '300px'}}/>
+            <div className="image-slider">
+              <div className="slider-container">
+                <div className="slider-track" style={{transform: `translateX(-${currentSlide * 100}%)`}}>
+                  <div className="slide">
+                    <img src="/images/exam-hero.png" alt="Exam Hero App" />
+                  </div>
+                  <div className="slide">
+                    <img src="/images/exam-hero-2.png" alt="Features" />
+                  </div>
+                  <div className="slide">
+                    <img src="/images/exam-hero-3.png" alt="Dashboard" />
+                  </div>
+                  <div className="slide">
+                    <img src="/images/exam-hero-4.png" alt="Exams" />
+                  </div>
+                </div>
+                <button className="slider-btn prev" onClick={prevSlide}>
+                  ❮
+                </button>
+                <button className="slider-btn next" onClick={nextSlide}>
+                  ❯
+                </button>
+              </div>
+              <div className="slider-dots">
+                {[0, 1, 2, 3].map((index) => (
+                  <button
+                    key={index}
+                    className={`dot ${currentSlide === index ? 'active' : ''}`}
+                    onClick={() => setCurrentSlide(index)}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
