@@ -3,6 +3,18 @@
   color: white;
   padding: 3rem 0 1rem;
   margin-top: auto;
+  animation: fadeInUp 1s ease-out 1.5s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .footer-download-btn {
@@ -18,13 +30,30 @@
   font-weight: 600;
   transition: all 0.3s ease;
   margin: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+
+.footer-download-btn:hover::before {
+  left: 100%;
 }
 
 .footer-download-btn:hover {
   background: transparent;
   color: #f1c030;
   border-color: #f1c030;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05);
   box-shadow: 0 5px 15px rgba(241, 192, 48, 0.3);
 }
 
@@ -39,6 +68,26 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+.footer-section {
+  animation: fadeInUp 1s ease-out both;
+}
+
+.footer-section:nth-child(1) {
+  animation-delay: 1.6s;
+}
+
+.footer-section:nth-child(2) {
+  animation-delay: 1.7s;
+}
+
+.footer-section:nth-child(3) {
+  animation-delay: 1.8s;
+}
+
+.footer-section:nth-child(4) {
+  animation-delay: 1.9s;
 }
 
 .footer-section h3 {
@@ -96,12 +145,30 @@
   font-size: 1.2rem;
   transition: all 0.3s ease;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover::before {
+  transform: scale(1);
 }
 
 .social-links a:hover {
   background: #f1c030;
   color: #7e5745;
-  transform: translateY(-3px);
+  transform: translateY(-3px) rotate(360deg);
 }
 
 .download-buttons {
