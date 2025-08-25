@@ -4,6 +4,42 @@ import './Body.css';
 const Body = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 4;
+  
+  // Teacher carousel state
+  const [currentTeacher, setCurrentTeacher] = useState(0);
+  const teachers = [
+    {
+      id: 1,
+      name: "Dr. Ahmed Rahman",
+      designation: "Physics Expert",
+      image: "/images/teacher-1.jpg"
+    },
+    {
+      id: 2,
+      name: "Prof. Fatima Khan",
+      designation: "Mathematics Specialist",
+      image: "/images/teacher-2.jpg"
+    },
+    {
+      id: 3,
+      name: "Mr. Karim Hassan",
+      designation: "Chemistry Teacher",
+      image: "/images/teacher-3.jpg"
+    },
+    {
+      id: 4,
+      name: "Ms. Rashida Begum",
+      designation: "Biology Expert",
+      image: "/images/teacher-4.jpg"
+    },
+    {
+      id: 5,
+      name: "Dr. Mahmud Ali",
+      designation: "English Literature",
+      image: "/images/teacher-5.jpg"
+    }
+  ];
+  const totalTeachers = teachers.length;
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -11,6 +47,15 @@ const Body = () => {
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  // Teacher carousel functions
+  const nextTeacher = useCallback(() => {
+    setCurrentTeacher((prev) => (prev + 1) % totalTeachers);
+  }, [totalTeachers]);
+
+  const prevTeacher = () => {
+    setCurrentTeacher(currentTeacher === 0 ? totalTeachers - 1 : currentTeacher - 1);
   };
 
   // Auto-slide functionality
@@ -21,6 +66,15 @@ const Body = () => {
 
     return () => clearInterval(interval);
   }, [nextSlide]);
+
+  // Auto-slide functionality for teacher carousel
+  useEffect(() => {
+    const teacherInterval = setInterval(() => {
+      nextTeacher();
+    }, 5000); // Change teacher every 5 seconds
+
+    return () => clearInterval(teacherInterval);
+  }, [nextTeacher]);
 
   return (
     <main className="body">
@@ -117,20 +171,60 @@ const Body = () => {
       {/* Teacher Panel Section */}
       <section className="teacher-panel">
         <div className="container">
-          <div className="teacher-content">
-            <div className="teacher-info">
-              <h2>টিচার প্যানেল</h2>
-              <h3>আমাদের অভিজ্ঞ টিচার প্যানেল – আপনার সাফল্যের সঙ্গী</h3>
-              <p>ভালো শিক্ষক মানে সঠিক দিকনির্দেশনা, শক্তিশালী প্রস্তুতি।</p>
-              <a href="https://www.facebook.com/share/v/1GLwyMy3u7/" target="_blank" rel="noopener noreferrer" className="teacher-link">
-                টিচার প্যানেল দেখুন
-              </a>
-            </div>
-            <div className="teacher-video">
-              <div className="video-placeholder">
-                <div className="play-button">▶</div>
-                <p>টিচার প্যানেল ভিডিও</p>
+          
+          
+          <div className="team-carousel">
+            <div className="our-team-header">
+            <h2 className="team-title">OUR TEACHER</h2>
+          </div>
+            <div className="team-carousel-container">
+              <button className="team-nav-btn prev" onClick={prevTeacher}>
+                ❮
+              </button>
+              
+              <div className="team-showcase">
+                <div className="team-images-stack">
+                  {teachers.map((teacher, index) => {
+                    const isActive = index === currentTeacher;
+                    const isPrev = index === (currentTeacher - 1 + totalTeachers) % totalTeachers;
+                    const isNext = index === (currentTeacher + 1) % totalTeachers;
+                    
+                    let position = 'hidden';
+                    if (isActive) position = 'center';
+                    else if (isPrev) position = 'left';
+                    else if (isNext) position = 'right';
+                    
+                    return (
+                      <div 
+                        key={teacher.id} 
+                        className={`team-image-card ${position}`}
+                      >
+                        <img src={teacher.image} alt={teacher.name} />
+                      </div>
+                    );
+                  })}
+                </div>
+                
+                <div className="team-member-info">
+                  <h3 className="member-name">{teachers[currentTeacher].name}</h3>
+                  <div className="member-title-line"></div>
+                  <p className="member-designation">{teachers[currentTeacher].designation}</p>
+                </div>
               </div>
+              
+              <button className="team-nav-btn next" onClick={nextTeacher}>
+                ❯
+              </button>
+            </div>
+            
+            <div className="team-dots">
+              {teachers.map((_, index) => (
+                <button
+                  key={index}
+                  className={`team-dot ${currentTeacher === index ? 'active' : ''}`}
+                  onClick={() => setCurrentTeacher(index)}
+                />
+              ))}
             </div>
           </div>
         </div>

@@ -368,146 +368,229 @@
   font-size: 0.95rem;
 }
 
-/* Teacher Panel Section */
+/* Teacher Panel Section - OUR TEAM Design */
 .teacher-panel {
-  background: #f8f9fa;
-  padding: 5rem 0;
-  animation: fadeInUp 1s ease-out 1s both;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #e8e9ea 0%, #f5f6f7 100%);
+  animation: fadeInUp 1s ease-out;
+  position: relative;
 }
 
-.teacher-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
+.our-team-header {
+  text-align: center;
+  /* margin-bottom: 60px; */
+  padding: 0 40px;
+  position: relative;
 }
 
-.teacher-info {
-  animation: slideInLeft 1.2s ease-out 1.2s both;
-}
-
-.teacher-info h2 {
-  font-size: 2.5rem;
-  color: #7e5745;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.teacher-info h3 {
+.team-title {
   font-size: 1.5rem;
-  color: #8B4513;
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
+  font-weight: 900;
+  color: rgba(19, 68, 183, 0.4);
+  letter-spacing: 8px;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
 }
 
-.teacher-info p {
-  font-size: 1.1rem;
-  color: #7e5745;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+/* Team Carousel */
+.team-carousel {
+  margin-bottom: 40px;
+}
+
+.team-carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.team-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+.team-images-stack {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.team-image-card {
+  position: absolute;
+  width: 280px;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: white;
+  border: 3px solid white;
+}
+
+.team-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.team-image-card.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  z-index: 3;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.team-image-card.center img {
+  filter: grayscale(0%);
+}
+
+.team-image-card.left {
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(-15deg) scale(0.85);
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.team-image-card.right {
+  top: 50%;
+  right: 10%;
+  transform: translate(50%, -50%) rotate(15deg) scale(0.85);
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.team-image-card.hidden {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  z-index: 1;
+}
+
+/* Team Member Info */
+.team-member-info {
+  text-align: center;
+  z-index: 4;
+  position: relative;
+}
+
+.member-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+
+.member-title-line {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  margin: 0 auto 15px auto;
+  border-radius: 2px;
+}
+
+.member-designation {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Navigation Buttons */
+.team-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(52, 152, 219, 0.9);
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+  z-index: 5;
+}
+
+.team-nav-btn:hover {
+  background: #3498db;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 12px 35px rgba(52, 152, 219, 0.4);
+}
+
+.team-nav-btn.prev {
+  left: 50px;
+}
+
+.team-nav-btn.next {
+  right: 50px;
+}
+
+/* Team Dots */
+.team-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.team-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  background: #bdc3c7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-dot.active {
+  background: #3498db;
+  transform: scale(1.3);
+}
+
+.team-dot:hover {
+  background: #3498db;
+  transform: scale(1.2);
+}
+
+/* Teacher Panel Link */
+.teacher-panel-link {
+  text-align: center;
+  margin-top: 50px;
 }
 
 .teacher-link {
   display: inline-block;
-  background: linear-gradient(135deg, #7e5745 0%, #8B4513 100%);
+  background: #f1c030;
   color: white;
-  padding: 1rem 2rem;
-  border-radius: 30px;
+  padding: 15px 30px;
   text-decoration: none;
+  border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.teacher-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.6s;
-}
-
-.teacher-link:hover::before {
-  left: 100%;
+  box-shadow: 0 4px 15px rgba(241, 192, 48, 0.3);
 }
 
 .teacher-link:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 25px rgba(126, 87, 69, 0.4);
-  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
-}
-
-.teacher-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-placeholder {
-  background: linear-gradient(135deg, #7e5745 0%, #8B4513 100%);
-  border-radius: 20px;
-  padding: 3rem;
-  text-align: center;
-  color: white;
-  box-shadow: 0 10px 30px rgba(126, 87, 69, 0.3);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: slideInRight 1.2s ease-out 1.4s both;
-  position: relative;
-  overflow: hidden;
-}
-
-.video-placeholder::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.6s ease;
-}
-
-.video-placeholder:hover::before {
-  width: 300px;
-  height: 300px;
-}
-
-.video-placeholder:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 40px rgba(126, 87, 69, 0.4);
-}
-
-.video-placeholder .play-icon {
-  transition: transform 0.3s ease;
-}
-
-.video-placeholder:hover .play-icon {
-  transform: scale(1.2);
-  animation: pulse 2s infinite;
-}
-
-.play-button {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  opacity: 0.9;
-}
-
-.video-placeholder p {
-  font-size: 1.2rem;
-  margin: 0;
-  font-weight: 600;
+  background: #d4a829;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(241, 192, 48, 0.4);
 }
 
 
@@ -533,27 +616,74 @@
     gap: 1.5rem;
   }
   
-  .teacher-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
+  /* Team Panel Mobile Styles */
+  .teacher-panel {
+    padding: 60px 0;
   }
-  
-  .teacher-info h2 {
-    font-size: 2rem;
+
+  .our-team-header {
+    margin-bottom: 50px;
+    padding: 0 20px;
   }
-  
-  .teacher-info h3 {
-    font-size: 1.3rem;
+
+  .team-title {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
   }
-  
-  .video-placeholder {
-    min-height: 200px;
-    padding: 2rem;
+
+  .team-carousel-container {
+    min-height: 400px;
+    padding: 0 20px;
   }
-  
-  .play-button {
-    font-size: 3rem;
+
+  .team-images-stack {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .team-image-card {
+    width: 200px;
+    height: 240px;
+  }
+
+  .team-image-card.left {
+    left: 5%;
+    transform: translate(-50%, -50%) rotate(-10deg) scale(0.8);
+  }
+
+  .team-image-card.right {
+    right: 5%;
+    transform: translate(50%, -50%) rotate(10deg) scale(0.8);
+  }
+
+  .member-name {
+    font-size: 1.8rem;
+  }
+
+  .member-designation {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .team-nav-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .team-nav-btn.prev {
+    left: 10px;
+  }
+
+  .team-nav-btn.next {
+    right: 10px;
+  }
+
+  .teacher-link {
+    padding: 12px 25px;
+    font-size: 0.9rem;
   }
   
   .slider-container {
