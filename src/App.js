@@ -9,6 +9,7 @@ import RefundPolicy from './components/RefundPolicy';
 import FAQ from './components/FAQ';
 import HelpCenter from './components/HelpCenter';
 import ContactUs from './components/ContactUs';
+import SSCScience from './components/SSCScience';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
@@ -28,6 +29,7 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
             <Route path="/help" element={<HelpCenter />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/ssc-science" element={<SSCScience />} />
             </Routes>
         <Footer />
       </div>

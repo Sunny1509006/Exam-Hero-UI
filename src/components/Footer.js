@@ -61,7 +61,7 @@ const Footer = () => {
               <div className="link-group">
                 <h4>Programs</h4>
                 <div className="link-list">
-                  <a href="#ssc-science">SSC Science</a>
+                  <Link to="/ssc-science">SSC Science</Link>
                   <a href="#ssc-arts">SSC Arts</a>
                   <a href="#ssc-commerce">SSC Commerce</a>
                   <a href="#hsc-science">HSC Science</a>
