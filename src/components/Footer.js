@@ -44,7 +44,7 @@ const Footer = () => {
               <div className="link-group">
                 <h4>Support</h4>
                 <div className="link-list">
-                  <a href="#help">Help Center</a>
+                  <Link to="/help">Help Center</Link>
                   <Link to="/faq">FAQ</Link>
                   <a href="#contact">Contact Us</a>
                 </div>
