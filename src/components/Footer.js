@@ -25,14 +25,13 @@ const Footer = () => {
           
           <div className="footer-section-middle">
             <div className="footer-office">
-              <h4>Office Address</h4>
+              <h4>Company Address</h4>
               <div className="office-info">
-                <p>Exam Hero Education Ltd.</p>
-                <p>House #123, Road #456</p>
-                <p>Dhanmondi, Dhaka-1205</p>
+                <p>Exam Hero</p>
+                <p>Sherpur, Mymensingh</p>
                 <p>Bangladesh</p>
-                <p>Phone: +880-1234-567890</p>
-                <p>Email: info@examhero.com</p>
+                <p>Phone: +880***</p>
+                <p>Email: support@examhero.app</p>
               </div>
             </div>
           </div>
