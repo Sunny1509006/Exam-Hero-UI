@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className="link-list">
                   <Link to="/help">Help Center</Link>
                   <Link to="/faq">FAQ</Link>
-                  <a href="#contact">Contact Us</a>
+                  <Link to="/contact">Contact Us</Link>
                 </div>
               </div>
               
