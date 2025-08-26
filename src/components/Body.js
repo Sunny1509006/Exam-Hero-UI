@@ -12,31 +12,31 @@ const Body = () => {
       id: 1,
       name: "R.I. Rosni",
       designation: "Dakha University",
-      image: "/images/R.I. Rosni.jpeg"
+      image: "/Images/R.I. Rosni.jpeg"
     },
     {
       id: 2,
       name: "Niloy",
       designation: "Jahangirnagar University",
-      image: "/images/Niloy.jpeg"
+      image: "/Images/Niloy.jpeg"
     },
     {
       id: 3,
       name: "Rabbi",
       designation: "Jahangirnagar University",
-      image: "/images/Rabbi.jpeg"
+      image: "/Images/Rabbi.jpeg"
     },
     {
       id: 4,
       name: "Rahat Islam",
       designation: "DMC",
-      image: "/images/Rahat Islam.jpeg"
+      image: "/Images/Rahat Islam.jpeg"
     },
     {
       id: 5,
       name: "Imran Hussain",
       designation: "Dakha University",
-      image: "/images/Imran Hussain.jpeg"
+      image: "/Images/Imran Hussain.jpeg"
     }
   ];
   const totalTeachers = teachers.length;
@@ -101,18 +101,18 @@ const Body = () => {
           <div className="hero-image">
             <div className="image-slider">
               <div className="slider-container">
-                <div className="slider-track" style={{transform: `translateX(-${currentSlide * 100}%)`}}>
+                <div className="slider-track" style={{transform: `translateX(-${currentSlide * 25}%)`}}>
                   <div className="slide">
-                    <img src="/images/exam-hero.png" alt="Exam Hero App" />
+                    <img src="/Images/1.png" alt="Exam Hero App" />
                   </div>
                   <div className="slide">
-                    <img src="/images/exam-hero-2.png" alt="Features" />
+                    <img src="/Images/2.png" alt="Features" />
                   </div>
                   <div className="slide">
-                    <img src="/images/exam-hero-3.png" alt="Dashboard" />
+                    <img src="/Images/3.png" alt="Dashboard" />
                   </div>
                   <div className="slide">
-                    <img src="/images/exam-hero-4.png" alt="Exams" />
+                    <img src="/Images/4.png" alt="Exams" />
                   </div>
                 </div>
                 <button className="slider-btn prev" onClick={prevSlide}>
