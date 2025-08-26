@@ -1,0 +1,253 @@
+.refund-container {
+  min-height: 100vh;
+  background: #4A5B5C;
+  padding: 2rem 0;
+}
+
+.refund-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: white;
+}
+
+.refund-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.refund-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.refund-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.95;
+  background: #d9d9d9;
+  color: #2c3e50;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.refund-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.refund-section {
+  background: #d9d9d9;
+  color: #2c3e50;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.refund-section:hover {
+  transform: translateY(-3px);
+  background: #e6e6e6;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.refund-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.policy-item {
+  margin-bottom: 1.5rem;
+}
+
+.policy-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+}
+
+.policy-item p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.policy-note {
+  background: #e8f4fd;
+  border-left: 4px solid #3498db;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.policy-note p {
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.refund-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.refund-section li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.refund-section li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.refund-section strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.contact-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.contact-email {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.contact-email:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.refund-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.important-notice {
+  background: #d9d9d9;
+  color: #2c3e50;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.important-notice h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #e74c3c;
+}
+
+.important-notice p {
+  line-height: 1.6;
+  margin: 0;
+  color: #34495e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .refund-content {
+    padding: 0 1rem;
+  }
+  
+  .refund-title {
+    font-size: 2.2rem;
+  }
+  
+  .refund-intro {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  .refund-section {
+    padding: 1.5rem;
+  }
+  
+  .refund-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .policy-item h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .refund-title {
+    font-size: 1.8rem;
+  }
+  
+  .refund-section {
+    padding: 1rem;
+  }
+  
+  .refund-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .contact-email {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .important-notice {
+    padding: 1.5rem;
+  }
+}

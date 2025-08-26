@@ -55,7 +55,7 @@ const Footer = () => {
                 <div className="link-list">
                   <Link to="/privacy">Privacy Policy</Link>
                   <Link to="/terms">Terms of Service</Link>
-                  <a href="#refund">Refund Policy</a>
+                  <Link to="/refund">Refund Policy</Link>
                 </div>
               </div>
               <div className="link-group">
