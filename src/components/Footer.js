@@ -53,7 +53,7 @@ const Footer = () => {
               <div className="link-group">
                 <h4>Legal</h4>
                 <div className="link-list">
-                  <a href="#privacy">Privacy Policy</a>
+                  <Link to="/privacy">Privacy Policy</Link>
                   <Link to="/terms">Terms of Service</Link>
                   <a href="#refund">Refund Policy</a>
                 </div>
