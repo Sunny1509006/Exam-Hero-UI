@@ -14,12 +14,12 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.program-header {
+.ssc-science-program-header {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.program-header h1 {
+.ssc-science-program-header h1 {
   color: #2C3E50;
   font-size: 2.5rem;
   font-weight: bold;
@@ -29,7 +29,7 @@
   display: inline-block;
 }
 
-.program-tagline {
+.ssc-science-program-tagline {
   font-size: 1.3rem;
   color: #27AE60;
   font-weight: bold;
@@ -38,7 +38,7 @@
   letter-spacing: 1px;
 }
 
-.program-intro {
+.ssc-science-program-intro {
   font-size: 1.1rem;
   color: #555;
   line-height: 1.6;
@@ -49,7 +49,7 @@
   margin: 0;
 }
 
-.program-section {
+.ssc-science-program-section {
   margin-bottom: 40px;
   padding: 25px;
   background-color: #fafafa;
@@ -58,11 +58,11 @@
   transition: box-shadow 0.3s ease;
 }
 
-.program-section:hover {
+.ssc-science-program-section:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.program-section h2 {
+.ssc-science-program-section h2 {
   color: #2C3E50;
   font-size: 1.8rem;
   font-weight: bold;
@@ -71,14 +71,14 @@
   border-bottom: 2px solid #27AE60;
 }
 
-.subjects-grid {
+.ssc-science-subjects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 25px;
 }
 
-.subject-category {
+.ssc-science-subject-category {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -86,25 +86,25 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.subject-category:hover {
+.ssc-science-subject-category:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.subject-category h3 {
+.ssc-science-subject-category h3 {
   color: #2C3E50;
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.subject-list {
+.ssc-science-subject-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.subject-list li {
+.ssc-science-subject-list li {
   padding: 8px 0;
   color: #555;
   font-size: 1rem;
@@ -114,18 +114,18 @@
   padding-left: 20px;
 }
 
-.subject-list li:last-child {
+.ssc-science-subject-list li:last-child {
   border-bottom: none;
 }
 
-.subject-list li::before {
+.ssc-science-subject-list li::before {
   content: "📚";
   position: absolute;
   left: 0;
   top: 8px;
 }
 
-.program-note {
+.ssc-science-program-note {
   background-color: #e8f5e8;
   border: 1px solid #27AE60;
   border-radius: 8px;
@@ -133,7 +133,7 @@
   margin-top: 20px;
 }
 
-.program-note p {
+.ssc-science-program-note p {
   margin: 0;
   color: #2C3E50;
   font-weight: 500;
@@ -142,14 +142,14 @@
   line-height: 1.6;
 }
 
-.exam-features {
+.ssc-science-exam-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
 
-.exam-feature {
+.ssc-science-exam-feature {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -157,33 +157,33 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.exam-feature:hover {
+.ssc-science-exam-feature:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.exam-feature h4 {
+.ssc-science-exam-feature h4 {
   color: #2C3E50;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.exam-feature p {
+.ssc-science-exam-feature p {
   color: #555;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
 }
 
-.features-grid {
+.ssc-science-features-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
   margin-top: 20px;
 }
 
-.feature-item {
+.ssc-science-feature-item {
   display: flex;
   align-items: center;
   background-color: white;
@@ -193,42 +193,42 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.feature-item:hover {
+.ssc-science-feature-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.feature-icon {
+.ssc-science-feature-icon {
   font-size: 1.5rem;
   margin-right: 15px;
   width: 30px;
   text-align: center;
 }
 
-.feature-item span:last-child {
+.ssc-science-feature-item span:last-child {
   color: #555;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.perfect-for-section {
+.ssc-science-perfect-for-section {
   background-color: #e8f4fd;
   border: 2px solid #3498DB;
 }
 
-.perfect-for-section h2 {
+.ssc-science-perfect-for-section h2 {
   color: #2C3E50;
   border-bottom-color: #3498DB;
 }
 
-.perfect-for-list {
+.ssc-science-perfect-for-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
 }
 
-.perfect-for-item {
+.ssc-science-perfect-for-item {
   display: flex;
   align-items: flex-start;
   background-color: white;
@@ -237,30 +237,30 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.perfect-for-item:hover {
+.ssc-science-perfect-for-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.check-icon {
+.ssc-science-check-icon {
   font-size: 1.2rem;
   margin-right: 15px;
   margin-top: 2px;
   flex-shrink: 0;
 }
 
-.perfect-for-item span:last-child {
+.ssc-science-perfect-for-item span:last-child {
   color: #555;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.program-footer {
+.ssc-science-program-footer {
   margin-top: 40px;
   text-align: center;
 }
 
-.conclusion {
+.ssc-science-conclusion {
   background: linear-gradient(135deg, #27AE60, #2ECC71);
   color: white;
   border-radius: 15px;
@@ -268,28 +268,28 @@
   box-shadow: 0 8px 32px rgba(39, 174, 96, 0.3);
 }
 
-.conclusion h3 {
+.ssc-science-conclusion h3 {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 15px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.conclusion p {
+.ssc-science-conclusion p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 25px;
   opacity: 0.95;
 }
 
-.cta-buttons {
+.ssc-science-cta-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.cta-button {
+.ssc-science-cta-button {
   display: inline-block;
   padding: 15px 30px;
   border-radius: 25px;
@@ -300,12 +300,12 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.cta-button.primary {
+.ssc-science-cta-button.primary {
   background-color: #3498DB;
   color: white;
 }
 
-.cta-button.primary:hover {
+.ssc-science-cta-button.primary:hover {
   background-color: #2980B9;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
@@ -313,12 +313,12 @@
   text-decoration: none;
 }
 
-.cta-button.secondary {
+.ssc-science-cta-button.secondary {
   background-color: #F39C12;
   color: white;
 }
 
-.cta-button.secondary:hover {
+.ssc-science-cta-button.secondary:hover {
   background-color: #E67E22;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
@@ -336,43 +336,43 @@
     padding: 25px;
   }
 
-  .program-header h1 {
+  .ssc-science-program-header h1 {
     font-size: 2rem;
   }
 
-  .program-tagline {
+  .ssc-science-program-tagline {
     font-size: 1.1rem;
   }
 
-  .program-intro {
+  .ssc-science-program-intro {
     font-size: 1rem;
     padding: 15px;
   }
 
-  .subjects-grid {
+  .ssc-science-subjects-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .program-section {
+  .ssc-science-program-section {
     padding: 20px;
     margin-bottom: 30px;
   }
 
-  .program-section h2 {
+  .ssc-science-program-section h2 {
     font-size: 1.5rem;
   }
 
-  .exam-features {
+  .ssc-science-exam-features {
     grid-template-columns: 1fr;
   }
 
-  .cta-buttons {
+  .ssc-science-cta-buttons {
     flex-direction: column;
     align-items: center;
   }
 
-  .cta-button {
+  .ssc-science-cta-button {
     width: 100%;
     max-width: 250px;
     text-align: center;
@@ -384,39 +384,39 @@
     padding: 20px;
   }
 
-  .program-header h1 {
+  .ssc-science-program-header h1 {
     font-size: 1.8rem;
   }
 
-  .program-section {
+  .ssc-science-program-section {
     padding: 15px;
   }
 
-  .subject-category {
+  .ssc-science-subject-category {
     padding: 15px;
   }
 
-  .exam-feature {
+  .ssc-science-exam-feature {
     padding: 15px;
   }
 
-  .feature-item {
+  .ssc-science-feature-item {
     padding: 12px 15px;
   }
 
-  .perfect-for-item {
+  .ssc-science-perfect-for-item {
     padding: 12px 15px;
   }
 
-  .conclusion {
+  .ssc-science-conclusion {
     padding: 25px;
   }
 
-  .conclusion h3 {
+  .ssc-science-conclusion h3 {
     font-size: 1.5rem;
   }
 
-  .cta-button {
+  .ssc-science-cta-button {
     padding: 12px 25px;
     font-size: 1rem;
   }
