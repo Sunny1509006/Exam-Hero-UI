@@ -10,6 +10,8 @@ import FAQ from './components/FAQ';
 import HelpCenter from './components/HelpCenter';
 import ContactUs from './components/ContactUs';
 import SSCScience from './components/SSCScience';
+import SSCHumanities from './components/SSCHumanities';
+import SSCBusiness from './components/SSCBusiness';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
@@ -30,6 +32,8 @@ function App() {
             <Route path="/help" element={<HelpCenter />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/ssc-science" element={<SSCScience />} />
+            <Route path="/ssc-humanities" element={<SSCHumanities />} />
+            <Route path="/ssc-business" element={<SSCBusiness />} />
             </Routes>
         <Footer />
       </div>
