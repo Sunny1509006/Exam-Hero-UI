@@ -45,7 +45,7 @@ const Footer = () => {
                 <h4>Support</h4>
                 <div className="link-list">
                   <a href="#help">Help Center</a>
-                  <a href="#faq">FAQ</a>
+                  <Link to="/faq">FAQ</Link>
                   <a href="#contact">Contact Us</a>
                 </div>
               </div>

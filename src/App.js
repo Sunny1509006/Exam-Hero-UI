@@ -5,6 +5,7 @@ import Body from './components/Body';
 import About from './components/About';
 import TermsConditions from './components/TermsConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
@@ -16,11 +17,12 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-            <Route path="/" element={<Body />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/terms" element={<TermsConditions />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-          </Routes>
+             <Route path="/" element={<Body />} />
+             <Route path="/about" element={<About />} />
+             <Route path="/terms" element={<TermsConditions />} />
+             <Route path="/privacy" element={<PrivacyPolicy />} />
+             <Route path="/faq" element={<FAQ />} />
+           </Routes>
         <Footer />
       </div>
     </Router>
