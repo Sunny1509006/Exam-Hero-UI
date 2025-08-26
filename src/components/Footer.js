@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -53,7 +54,7 @@ const Footer = () => {
                 <h4>Legal</h4>
                 <div className="link-list">
                   <a href="#privacy">Privacy Policy</a>
-                  <a href="#terms">Terms of Service</a>
+                  <Link to="/terms">Terms of Service</Link>
                   <a href="#refund">Refund Policy</a>
                 </div>
               </div>
