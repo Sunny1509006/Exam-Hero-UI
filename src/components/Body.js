@@ -10,33 +10,33 @@ const Body = () => {
   const teachers = [
     {
       id: 1,
-      name: "Dr. Ahmed Rahman",
-      designation: "Physics Expert",
-      image: "/images/teacher-1.jpg"
+      name: "R.I. Rosni",
+      designation: "Dakha University",
+      image: "/images/R.I. Rosni.jpeg"
     },
     {
       id: 2,
-      name: "Prof. Fatima Khan",
-      designation: "Mathematics Specialist",
-      image: "/images/teacher-2.jpg"
+      name: "Niloy",
+      designation: "Jahangirnagar University",
+      image: "/images/Niloy.jpeg"
     },
     {
       id: 3,
-      name: "Mr. Karim Hassan",
-      designation: "Chemistry Teacher",
-      image: "/images/teacher-3.jpg"
+      name: "Rabbi",
+      designation: "Jahangirnagar University",
+      image: "/images/Rabbi.jpeg"
     },
     {
       id: 4,
-      name: "Ms. Rashida Begum",
-      designation: "Biology Expert",
-      image: "/images/teacher-4.jpg"
+      name: "Rahat Islam",
+      designation: "DMC",
+      image: "/images/Rahat Islam.jpeg"
     },
     {
       id: 5,
-      name: "Dr. Mahmud Ali",
-      designation: "English Literature",
-      image: "/images/teacher-5.jpg"
+      name: "Imran Hussain",
+      designation: "Dakha University",
+      image: "/images/Imran Hussain.jpeg"
     }
   ];
   const totalTeachers = teachers.length;
