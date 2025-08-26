@@ -65,7 +65,7 @@ const Footer = () => {
                   <Link to="/ssc-humanities">SSC Arts</Link>
                   <Link to="/ssc-business">SSC Commerce</Link>
                   <Link to="/hsc-science">HSC Science</Link>
-                  <a href="#hsc-arts">HSC Arts</a>
+                  <Link to="/hsc-humanities">HSC Arts</Link>
                   <a href="#hsc-commerce">HSC Commerce</a>
                 </div>
               </div>

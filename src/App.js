@@ -13,6 +13,7 @@ import SSCScience from './components/SSCScience';
 import SSCHumanities from './components/SSCHumanities';
 import SSCBusiness from './components/SSCBusiness';
 import HSCScience from './components/HSCScience';
+import HSCHumanities from './components/HSCHumanities';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
@@ -36,6 +37,7 @@ function App() {
             <Route path="/ssc-humanities" element={<SSCHumanities />} />
             <Route path="/ssc-business" element={<SSCBusiness />} />
             <Route path="/hsc-science" element={<HSCScience />} />
+            <Route path="/hsc-humanities" element={<HSCHumanities />} />
           </Routes>
         <Footer />
       </div>
