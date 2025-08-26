@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import './FAQ.css';
 
 const FAQ = () => {
@@ -53,6 +54,13 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
+      <Helmet>
+        <title>FAQ - Exam Hero</title>
+        <meta name="description" content="Frequently Asked Questions about Exam Hero - Smart Learning App for SSC & HSC students. Get answers about features, pricing, AI tutor, and more." />
+        <meta name="keywords" content="exam hero faq, frequently asked questions, ssc hsc help, exam preparation questions" />
+        <meta property="og:title" content="FAQ - Exam Hero" />
+        <meta property="og:description" content="Get answers to frequently asked questions about Exam Hero smart learning platform." />
+      </Helmet>
       <div className="faq-content">
         <div className="faq-header">
           <h1 className="faq-title">❓ FAQ</h1>

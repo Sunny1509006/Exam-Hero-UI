@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './SSCScience.css';
 
 const SSCScience = () => {
   return (
     <div className="ssc-science">
+      <Helmet>
+        <title>SSC Science Program - Exam Hero</title>
+        <meta name="description" content="SSC Science Program by Exam Hero. Complete preparation for Physics, Chemistry, Biology, Higher Math with board questions, video solutions, and live exams." />
+        <meta name="keywords" content="ssc science, physics chemistry biology, higher math, ssc preparation, board exam science" />
+        <meta property="og:title" content="SSC Science Program - Exam Hero" />
+        <meta property="og:description" content="Complete SSC Science preparation with Physics, Chemistry, Biology, and Higher Math courses." />
+      </Helmet>
       <div className="ssc-science-container">
         <div className="ssc-science-program-header">
           <h1>SSC Science Program – Exam Hero</h1>

@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-container">
+      <Helmet>
+        <title>Privacy Policy - Exam Hero</title>
+        <meta name="description" content="Privacy Policy for Exam Hero - Smart Learning App. Learn how we collect, use, and protect your personal information and data." />
+        <meta name="keywords" content="exam hero privacy policy, data protection, user privacy, personal information" />
+        <meta property="og:title" content="Privacy Policy - Exam Hero" />
+        <meta property="og:description" content="Read our Privacy Policy to understand how Exam Hero protects your personal information." />
+      </Helmet>
       <div className="privacy-content">
         <div className="privacy-header">
           <h1 className="privacy-title">🔒 Privacy Policy</h1>

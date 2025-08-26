@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './HSCHumanities.css';
 
 const HSCHumanities = () => {
   return (
     <div className="hsc-humanities">
+      <Helmet>
+        <title>HSC Humanities Program - Exam Hero</title>
+        <meta name="description" content="HSC Humanities Program by Exam Hero. Complete preparation for History, Geography, Economics, Political Science with board questions, video solutions, and live exams." />
+        <meta name="keywords" content="hsc humanities, history geography economics, political science, hsc preparation, board exam humanities" />
+        <meta property="og:title" content="HSC Humanities Program - Exam Hero" />
+        <meta property="og:description" content="Complete HSC Humanities preparation with History, Geography, Economics, and Political Science courses." />
+      </Helmet>
       <div className="hsc-humanities-container">
         <div className="hsc-humanities-program-header">
           <h1>HSC Humanities Program</h1>

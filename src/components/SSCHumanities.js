@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './SSCHumanities.css';
 
 const SSCHumanities = () => {
   return (
     <div className="ssc-humanities">
+      <Helmet>
+        <title>SSC Humanities Program - Exam Hero</title>
+        <meta name="description" content="SSC Humanities Program by Exam Hero. Complete preparation for History, Geography, Civics, Economics with board questions, video solutions, and live exams." />
+        <meta name="keywords" content="ssc humanities, history geography civics, economics, ssc preparation, board exam humanities" />
+        <meta property="og:title" content="SSC Humanities Program - Exam Hero" />
+        <meta property="og:description" content="Complete SSC Humanities preparation with History, Geography, Civics, and Economics courses." />
+      </Helmet>
       <div className="ssc-humanities-container">
         <div className="ssc-humanities-program-header">
           <h1>SSC Humanities Program</h1>

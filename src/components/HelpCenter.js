@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './HelpCenter.css';
 
 const HelpCenter = () => {
   return (
     <div className="help-center">
+      <Helmet>
+        <title>Help Center - Exam Hero</title>
+        <meta name="description" content="Exam Hero Help Center - Get support, troubleshooting tips, and answers to common questions about our smart learning platform." />
+        <meta name="keywords" content="exam hero help center, customer support, troubleshooting, user guide, help documentation" />
+        <meta property="og:title" content="Help Center - Exam Hero" />
+        <meta property="og:description" content="Find help and support for using Exam Hero smart learning platform effectively." />
+      </Helmet>
       <div className="help-center-container">
         <h1>Exam Hero – Help Center</h1>
         <p className="help-center-intro">

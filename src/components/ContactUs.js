@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './ContactUs.css';
 
 const ContactUs = () => {
   return (
     <div className="contact-us">
+      <Helmet>
+        <title>Contact Us - Exam Hero</title>
+        <meta name="description" content="Contact Exam Hero support team. Get help with your SSC & HSC exam preparation. Email, phone, and social media contact information." />
+        <meta name="keywords" content="contact exam hero, customer support, help center, exam preparation support" />
+        <meta property="og:title" content="Contact Us - Exam Hero" />
+        <meta property="og:description" content="Get in touch with Exam Hero support team for assistance with your exam preparation." />
+      </Helmet>
       <div className="contact-us-container">
         <h1>Contact Us – Exam Hero</h1>
         <p className="contact-intro">

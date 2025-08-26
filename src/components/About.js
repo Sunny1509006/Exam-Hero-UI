@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './About.css';
 
 const About = () => {
   return (
     <div className="about-container">
+      <Helmet>
+        <title>About Us - Exam Hero</title>
+        <meta name="description" content="Learn about Exam Hero - Smart Learning Platform for SSC & HSC students in Bangladesh. Modern educational app with board questions, video solutions, and live exams." />
+        <meta name="keywords" content="about exam hero, smart learning platform, ssc hsc preparation, bangladesh education" />
+        <meta property="og:title" content="About Us - Exam Hero" />
+        <meta property="og:description" content="Smart Learning Platform for SSC & HSC students in Bangladesh with board questions, video solutions, and live exams." />
+      </Helmet>
       <div className="about-content">
         <div className="hero-section">
           <h1 className="main-title">

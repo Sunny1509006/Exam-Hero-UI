@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './HSCBusiness.css';
 
 const HSCBusiness = () => {
   return (
     <div className="hsc-business">
+      <Helmet>
+        <title>HSC Business Studies Program - Exam Hero</title>
+        <meta name="description" content="HSC Business Studies Program by Exam Hero. Complete preparation for Accounting, Business Organization, Finance & Banking, Economics with board questions and video solutions." />
+        <meta name="keywords" content="hsc business studies, accounting finance banking, business organization economics, hsc preparation, board exam business" />
+        <meta property="og:title" content="HSC Business Studies Program - Exam Hero" />
+        <meta property="og:description" content="Complete HSC Business Studies preparation with Accounting, Finance, Banking, and Economics courses." />
+      </Helmet>
       <div className="hsc-business-container">
         <div className="hsc-business-program-header">
           <h1>HSC Business Studies Program</h1>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { Helmet } from 'react-helmet';
 import './Body.css';
 
 const Body = () => {
@@ -78,6 +79,14 @@ const Body = () => {
 
   return (
     <main className="body">
+      <Helmet>
+        <title>Exam Hero - কম সময়েই স্মার্ট প্রস্তুতি</title>
+        <meta name="description" content="Exam Hero - কম সময়েই স্মার্ট প্রস্তুতি। বোর্ড প্রশ্ন, অধ্যায়ভিত্তিক সমাধান, লাইভ এক্সাম আর সলভিং ভিডিওসহ দুর্দান্ত ফিচারের সমাহার।" />
+        <meta name="keywords" content="exam hero, ssc, hsc, board exam, bangladesh education, smart learning, online exam" />
+        <meta property="og:title" content="Exam Hero - কম সময়েই স্মার্ট প্রস্তুতি" />
+        <meta property="og:description" content="বোর্ড প্রশ্ন, অধ্যায়ভিত্তিক সমাধান, লাইভ এক্সাম আর সলভিং ভিডিওসহ দুর্দান্ত ফিচারের সমাহার।" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
       <section className="hero">
         <div className="container">

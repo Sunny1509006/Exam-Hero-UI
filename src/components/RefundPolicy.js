@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './RefundPolicy.css';
 
 const RefundPolicy = () => {
   return (
     <div className="refund-container">
+      <Helmet>
+        <title>Refund Policy - Exam Hero</title>
+        <meta name="description" content="Refund Policy for Exam Hero - Smart Learning App. Learn about our refund terms, conditions, and process for educational services." />
+        <meta name="keywords" content="exam hero refund policy, refund terms, money back guarantee, educational services refund" />
+        <meta property="og:title" content="Refund Policy - Exam Hero" />
+        <meta property="og:description" content="Read our Refund Policy to understand the terms and conditions for refunds on Exam Hero services." />
+      </Helmet>
       <div className="refund-content">
         <div className="refund-header">
           <h1 className="refund-title">💰 Refund Policy – Exam Hero</h1>

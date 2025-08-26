@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './HSCScience.css';
 
 const HSCScience = () => {
   return (
     <div className="hsc-science">
+      <Helmet>
+        <title>HSC Science Program - Exam Hero</title>
+        <meta name="description" content="HSC Science Program by Exam Hero. Complete preparation for Physics, Chemistry, Biology, Higher Math with board questions, video solutions, and live exams." />
+        <meta name="keywords" content="hsc science, physics chemistry biology, higher math, hsc preparation, board exam science" />
+        <meta property="og:title" content="HSC Science Program - Exam Hero" />
+        <meta property="og:description" content="Complete HSC Science preparation with Physics, Chemistry, Biology, and Higher Math courses." />
+      </Helmet>
       <div className="hsc-science-container">
         <div className="hsc-science-program-header">
           <h1>HSC Science Program</h1>

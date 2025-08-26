@@ -1,9 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './TermsConditions.css';
 
 const TermsConditions = () => {
   return (
     <div className="terms-container">
+      <Helmet>
+        <title>Terms & Conditions - Exam Hero</title>
+        <meta name="description" content="Terms and Conditions for Exam Hero - Smart Learning App. Read our terms of service, user guidelines, and legal policies." />
+        <meta name="keywords" content="exam hero terms conditions, terms of service, user agreement, legal policies" />
+        <meta property="og:title" content="Terms & Conditions - Exam Hero" />
+        <meta property="og:description" content="Read the Terms and Conditions for using Exam Hero smart learning platform." />
+      </Helmet>
       <div className="terms-content">
         <div className="terms-header">
           <h1 className="terms-title">📋 Terms & Conditions</h1>
