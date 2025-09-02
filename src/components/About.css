@@ -146,6 +146,56 @@
   margin: 0;
 }
 
+/* Company Registration Section */
+.company-registration-section {
+  margin-top: 4rem;
+  padding: 3rem 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.registration-details {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.registration-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border-left: 4px solid #ffd700;
+  transition: all 0.3s ease;
+}
+
+.registration-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.registration-item .label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+
+.registration-item .value {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: white;
+  background: rgba(74, 91, 92, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  min-width: 120px;
+  text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-content {
@@ -176,6 +226,18 @@
   .cta-title {
     font-size: 1.8rem;
   }
+  
+  .registration-item {
+    padding: 0.8rem 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .registration-item .value {
+    min-width: auto;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -193,5 +255,19 @@
   
   .feature-card {
     padding: 1rem;
+  }
+  
+  .company-registration-section {
+    margin-top: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .registration-item .label {
+    font-size: 1rem;
+  }
+  
+  .registration-item .value {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
   }
 }

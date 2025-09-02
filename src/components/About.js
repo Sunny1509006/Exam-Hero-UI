@@ -141,6 +141,28 @@ const About = () => {
         <div className="cta-section">
           <h2 className="cta-title">🏆 Exam Hero – Be the Real Hero of Your Exam!</h2>
         </div>
+
+        <div className="company-registration-section">
+          <h2 className="section-title">📋 Company Registration Details</h2>
+          <div className="registration-details">
+            <div className="registration-item">
+              <span className="label">Trade License No:</span>
+              <span className="value">43</span>
+            </div>
+            <div className="registration-item">
+              <span className="label">Book No:</span>
+              <span className="value">01</span>
+            </div>
+            <div className="registration-item">
+              <span className="label">BIN:</span>
+              <span className="value">(Processing)</span>
+            </div>
+            <div className="registration-item">
+              <span className="label">DUNS:</span>
+              <span className="value">(Processing)</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
