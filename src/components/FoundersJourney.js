@@ -22,13 +22,13 @@ const FoundersJourney = () => {
           <div className="founder-intro">
             <div className="founder-image">
               <img src="/Images/hridoy.jpeg" alt="Hridoy - Founder of Exam Hero" />
-              <div className="founder-name">Hridoy</div>
+              <div className="founder-name">Hridoy Hasan</div>
               <div className="founder-title">Founder & CEO, Exam Hero</div>
             </div>
             
             <div className="founder-story">
               <p className="intro-text">
-                I am <strong>Hridoy</strong>, the founder of Exam Hero App. The journey of Exam Hero began with a simple realization: 
+                I am <strong>Hridoy Hasan</strong>, the founder of Exam Hero App. The journey of Exam Hero began with a simple realization: 
                 students in Bangladesh struggle to access past exam questions, mock tests, and proper video solutions. 
                 Many cannot afford expensive test papers or coaching centers, which creates a huge gap in preparation.
               </p>

@@ -60,11 +60,11 @@ const Footer = ({ onPlayStoreClick, onAppStoreClick }) => {
                 <h4>Programs</h4>
                 <div className="link-list">
                   <Link to="/ssc-science">SSC Science</Link>
-                  <Link to="/ssc-humanities">SSC Arts</Link>
-                  <Link to="/ssc-business">SSC Commerce</Link>
+                  <Link to="/ssc-humanities">SSC Humanities</Link>
+                  <Link to="/ssc-business">SSC Business Studies</Link>
                   <Link to="/hsc-science">HSC Science</Link>
-                  <Link to="/hsc-humanities">HSC Arts</Link>
-                  <Link to="/hsc-business">HSC Commerce</Link>
+                  <Link to="/hsc-humanities">HSC Humanities</Link>
+                  <Link to="/hsc-business">HSC Business Studies</Link>
                 </div>
               </div>
             </div>
