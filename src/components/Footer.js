@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ onPlayStoreClick, onAppStoreClick }) => {
   return (
     <footer className="footer">
       <div className="container">
@@ -11,14 +11,14 @@ const Footer = () => {
             <div className="footer-brand">
               <h3>Exam Hero</h3>
               <div className="download-buttons">
-                <a href="#" className="download-btn play-store">
+                <button onClick={onPlayStoreClick} className="download-btn play-store">
                   <span className="store-icon">📱</span>
                   <span className="store-name">Play Store</span>
-                </a>
-                <a href="#" className="download-btn app-store">
+                </button>
+                <button onClick={onAppStoreClick} className="download-btn app-store">
                   <span className="store-icon">🍎</span>
                   <span className="store-name">App Store</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>

@@ -217,6 +217,8 @@
   color: white;
   transition: all 0.3s ease;
   font-size: 0.75rem;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .download-btn:hover {

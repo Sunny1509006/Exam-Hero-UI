@@ -2,9 +2,10 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Helmet } from 'react-helmet';
 import './Body.css';
 
-const Body = () => {
+const Body = ({ onPlayStoreClick, onAppStoreClick }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 4;
+
   
   // Teacher carousel state
   const [currentTeacher, setCurrentTeacher] = useState(0);
@@ -59,6 +60,8 @@ const Body = () => {
     setCurrentTeacher(currentTeacher === 0 ? totalTeachers - 1 : currentTeacher - 1);
   };
 
+
+
   // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
@@ -96,14 +99,14 @@ const Body = () => {
             <div className="download-section">
               <h3 className="download-title">Download our App</h3>
               <div className="hero-buttons">
-                <a href="#" className="btn-download play-store">
+                <button onClick={onPlayStoreClick} className="btn-download play-store">
                   <span className="store-icon">📱</span>
                   Play Store
-                </a>
-                <a href="#" className="btn-download app-store">
+                </button>
+                <button onClick={onAppStoreClick} className="btn-download app-store">
                   <span className="store-icon">🍎</span>
                   App Store
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -259,6 +262,7 @@ const Body = () => {
         </div>
       </div>
       </section>
+
 
 
     </main>
