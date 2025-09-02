@@ -15,6 +15,7 @@ import SSCBusiness from './components/SSCBusiness';
 import HSCScience from './components/HSCScience';
 import HSCHumanities from './components/HSCHumanities';
 import HSCBusiness from './components/HSCBusiness';
+import FoundersJourney from './components/FoundersJourney';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
@@ -40,6 +41,7 @@ function App() {
             <Route path="/hsc-science" element={<HSCScience />} />
             <Route path="/hsc-humanities" element={<HSCHumanities />} />
             <Route path="/hsc-business" element={<HSCBusiness />} />
+            <Route path="/founders-journey" element={<FoundersJourney />} />
           </Routes>
         <Footer />
       </div>
