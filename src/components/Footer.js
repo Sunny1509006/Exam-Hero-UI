@@ -28,8 +28,7 @@ const Footer = ({ onPlayStoreClick, onAppStoreClick }) => {
               <h4>Company Address</h4>
               <div className="office-info">
                 <p>Exam Hero</p>
-                <p>Sherpur, Mymensingh</p>
-                <p>Bangladesh</p>
+                <p>Holding #439, Jankikhila, Sreebordi, Sherpur, Mymensingh, Bangladesh</p>
                 <p>Phone: +880***</p>
                 <p>Email: support@examhero.app</p>
               </div>
